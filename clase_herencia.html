@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Clase de Herencia</h2>
+        <script>
+            class User {
+                constructor (nom, curso, gen) {
+                    this.nombre = nom;
+                    this.curso = curso;
+                    this.generacion = gen;
+                }
+                //metodo
+                notificar () {
+                    alert('Bienvenido a la plataforma ' + this.nombre)
+                }
+            }
+
+            class Relator {
+                constructor (nom, curso, gen, cursos_anteriores) {
+                    this.nombre = nom;
+                    this.generacion = gen;
+                    this.cursos_anteriores;
+                }
+            }
+
+            const u1 = new User('Anthony Reyes', 'FullStack JS', 'Paillaco II')
+            const u2 = new User('Vicky', 'FullStack JS', 'Paillaco II')
+            const anthony = {
+                nombre: 'Anthony Reyes',
+                curso: 'Full Stack',
+                generacion: 'Paillaco II',
+                notificar: function () {
+                    alert('Bienvenido a la plataforma Anthony Reyes')
+                }
+            }
+        </script>
+</body>
+</html>

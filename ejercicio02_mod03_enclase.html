@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio en clases 02 modulo 03</h1>
+
+    <script>
+        class Autos {
+            constructor (marca, mod, year, puertas) {
+                this.marca = marca;
+                this.modelo = modelo;
+                this.año = year;
+                this.puertas = puertas;
+            }
+            //metodo
+            acelerar () {
+                alert('Acelerando...')
+                console.log(acelerar)
+            }
+            subirvidrios() {
+                alert('Subiendo vidrios...')
+                console.log(subir_vidrios)
+            }
+        }
+        class Autogas extends Autos{
+            acelerar(){
+                console.log('Acelerando con gas')
+            }
+        }
+        class Autonafta extends Autos{
+            acelerar(){
+                console.log('Acelerando con nafta')
+            }
+        }
+        class Autoelectrico extends Autos{
+            acelerar(){
+                console.log('Acelerando electrico')
+            }
+        }
+        const a1 = new Autogas('Chevrolet', 'Corsa', '2022', '4 puertas')
+        const a2 = new Autonafta('Cualquiera')
+        const a3 = new Autoelectrico('Si')
+
+    </script>
+</body>
+</html>
